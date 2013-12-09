@@ -1,8 +1,1 @@
-/applicationContext.xml
 /dao
-/domain
-/log4j.properties
-/server
-/service
-/util
-/web

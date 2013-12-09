@@ -24,7 +24,7 @@ import domain.Word;
 @Component
 public class WordsDaoImpl implements IWordsDao{
 	
-	private final String PATH = "D:/env/workspace/spring/data";
+	private final String PATH = "D:/env/git/moodoasis/qiusres/spring/data";
 	private Vector<Map<Integer,String>> excelData = new Vector<Map<Integer,String>>();
 	private static Logger logger = Logger.getLogger(Class.class.getName());
 	
@@ -49,7 +49,6 @@ public class WordsDaoImpl implements IWordsDao{
 	
 	private void loadData(){
 		File dir = new File(PATH);
-		
 		for(File file:dir.listFiles()){
 			try{
 				excelData.addAll(getExcelData(file));
